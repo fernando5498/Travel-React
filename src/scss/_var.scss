@@ -1,0 +1,32 @@
+// recuerda quitar el root css y añadirlo al reset para evitar css duplicado
+:root {
+    /* text  */
+    --text-heigh: 1.25rem;
+    --text-medium: 1rem;
+    --font-family: "Poppins";
+    // icons
+    --size-icons: 1.2rem;
+    /* colors  */
+    --color-blue: #01959a;
+    --color-gray: #222;
+    --color-white: white;
+    --color-black: black;
+}
+
+// text
+$text-heigh: var(--text-heigh);
+$text-medium: var(--text-medium);
+$font-family: var(--font-family);
+// icons
+$size-icons: var(--size-icons);
+/* colors  */
+$color-blue: var(--color-blue);
+$color-gray: var(--color-gray);
+$color-white: var(--color-white);
+$color-black: var(--color-black);
+
+$transition: (
+    fast: 300ms all,
+    medium: 600ms all,
+    slow: 300ms all,
+);

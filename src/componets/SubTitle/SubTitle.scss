@@ -1,0 +1,19 @@
+@use "../../scss/break-points" as breakP;
+.SubTitle {
+    &-h {
+        font-size: 3rem;
+        text-align: center;
+    }
+    &-p {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@include breakP.media-screen-down(md) {
+    .SubTitle {
+        &-h {
+            font-size: 2rem;
+        }
+    }
+}

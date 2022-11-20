@@ -1,0 +1,14 @@
+.Page404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    &-h {
+        font-size: 4rem;
+        font-weight: 800;
+    }
+    &-p {
+        margin-bottom: 1em;
+    }
+}

@@ -1,0 +1,36 @@
+@use "../../scss/var" as var;
+@use "../../scss/break-points" as breakP;
+.ContactForm {
+    color: var.$color-gray;
+    &-h {
+        text-align: center;
+        font-size: 2rem;
+    }
+    &-form {
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+.formInput,
+.formTextarea {
+    height: 3rem;
+    padding: 0 1em;
+    margin-bottom: 2em;
+    border-radius: 0.3rem;
+    border: 1px solid var.$color-gray;
+    width: 100%;
+}
+.formTextarea {
+    padding: 1em 1em;
+    height: auto;
+}
+
+@include breakP.media-screen-down(sm) {
+    .ContactForm-form {
+        width: 90%;
+    }
+}

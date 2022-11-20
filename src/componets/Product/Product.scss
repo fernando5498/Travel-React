@@ -1,0 +1,68 @@
+@use "../../scss/var" as var;
+@use "../../scss/break-points" as breakP;
+.Product {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+    padding-top: 4.5rem;
+    &-image {
+        img {
+            object-fit: cover;
+            border-radius: 0.4375rem;
+            box-shadow: -1px 1px 62px -18px rgb(0 0 0 / 19%);
+            max-height: 400px;
+        }
+        video {
+            border-radius: 0.4375rem;
+        }
+    }
+    &-content {
+        padding: 0 1em;
+        &-h {
+            font-size: 2rem;
+        }
+        &-p {
+            font-size: var.$text-medium;
+            padding: 0.2em 0 1em 0;
+        }
+        &-price {
+            background-color: var.$color-blue;
+            border-radius: 0.4375rem;
+            padding: 0.3em 0.6em;
+            width: fit-content;
+            font-weight: 600;
+            color: var.$color-white;
+            margin-bottom: 1em;
+            font-size: calc(var.$text-medium - 2px);
+            vertical-align: middle;
+        }
+        &-media {
+            display: grid;
+            margin-top: 1em;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 1rem;
+            div {
+                overflow: hidden;
+                border-radius: 0.4375rem;
+            }
+            img,
+            video {
+                height: 120px;
+                object-fit: cover;
+                transition: map-get(var.$transition, medium);
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .Button {
+            padding: 0.6rem 1.4rem;
+        }
+    }
+}
+
+@include breakP.media-screen-down(md) {
+    .Product {
+        grid-template-columns: 100%;
+    }
+}
