@@ -1,4 +1,10 @@
 
+
+## Screenshots
+
+![App Screenshot](https://github.com/fernando5498/Travel-React/blob/ed9d506d127d8b528cdf9fdd84cfd825d6627641/preview/travel-react.png)
+
+
 # 🏝 TRAVEL
 
 Está vez cree uno de mis primeras practicas con React, me ha gustado mucho el Framework y he pienso continuar creando proyectos así e incluso actualizar mi portafolio personal 😁
@@ -70,9 +76,4 @@ Si no está satisfecho con la herramienta de compilación y las opciones de conf
 En cambio, copiará todos los archivos de configuración y las dependencias transitivas (webpack, Babel, ESLint, etc.) directamente en su proyecto para que tenga control total sobre ellos. Todos los comandos excepto ejectseguirán funcionando, pero apuntarán a los scripts copiados para que pueda modificarlos. En este punto estás por tu cuenta.
 
 No tienes que usar nunca eject. El conjunto de funciones seleccionadas es adecuado para implementaciones pequeñas y medianas, y no debe sentirse obligado a usar esta función. Sin embargo, entendemos que esta herramienta no sería útil si no pudiera personalizarla cuando esté listo para ello.
-
-
-## Screenshots
-
-![App Screenshot](https://github.com/fernando5498/Travel-React/blob/ed9d506d127d8b528cdf9fdd84cfd825d6627641/preview/travel-react.png)
 
