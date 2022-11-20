@@ -1,0 +1,11 @@
+@use "../../scss/var" as var;
+.Value {
+    margin-bottom: 1.5em;
+    &-h {
+        font-size: 2rem;
+    }
+    &-p {
+        font-size: var.$text-medium;
+        padding-top: 1em;
+    }
+}

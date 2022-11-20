@@ -1,0 +1,56 @@
+@use "../../scss/break-points" as breakP;
+.FirsDescription {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5em;
+    &-text {
+        font-size: 1.1rem;
+        width: 49%;
+        &-h {
+            margin-bottom: 1em;
+        }
+        &-p {
+        }
+    }
+
+    &-images {
+        display: flex;
+        justify-content: space-between;
+        width: 49%;
+        position: relative;
+        z-index: -1;
+        img {
+            width: 49%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 0.375em;
+            box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+        }
+        img:nth-child(2) {
+            position: absolute;
+            right: 0;
+            top: -10%;
+        }
+    }
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+@include breakP.media-screen-down(md) {
+    .FirsDescription {
+        flex-direction: column-reverse;
+        margin-top: 2.5em;
+        &-text {
+            width: 100%;
+        }
+        &-images {
+            width: 100%;
+            margin: 1.8em 0;
+            img {
+                height: 250px;
+            }
+        }
+    }
+}

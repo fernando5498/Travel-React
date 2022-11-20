@@ -1,0 +1,17 @@
+@use "./break-points" as breakP;
+
+.u-show {
+    display: none;
+}
+.u-paddingSection {
+    padding: 4em 6em;
+}
+.u-w100 {
+    width: 100%;
+}
+
+@include breakP.media-screen-down(md) {
+    .u-paddingSection {
+        padding: 4em 2em;
+    }
+}

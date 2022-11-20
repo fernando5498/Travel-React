@@ -1,0 +1,34 @@
+@use "../../scss/var" as var;
+@use "../../scss/break-points" as breakP;
+.Card {
+    width: 100%;
+    box-shadow: 0 0.3125rem 1.5625rem 0.125rem rgba(0, 0, 0, 0.164);
+    border-radius: 0.4375rem;
+    padding: 1em;
+    &-image {
+        height: 12.5rem;
+        overflow: hidden;
+        border-radius: 0.4375rem;
+        img {
+            transition: map-get(var.$transition, medium);
+            object-fit: cover;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &-title {
+        font-size: 1.3rem;
+        padding: 0.9em 0 0.2em 0;
+    }
+    &-p {
+        font-size: 1rem;
+    }
+}
+
+@include breakP.media-screen-down(md) {
+    .Card {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}

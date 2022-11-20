@@ -1,0 +1,61 @@
+@use "../../scss/var" as var;
+@use "../../scss/break-points" as breakP;
+.Footer {
+    background: var.$color-black;
+    color: var.$color-white;
+    &-top {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-logo {
+            &-h {
+                font-size: 3rem;
+            }
+            &-p {
+                font-size: var.$text-medium;
+            }
+        }
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 2em;
+        gap: 1.5rem;
+        &-title {
+            font-size: 1.3rem;
+            padding: 1em 0px 0.8em 0px;
+        }
+        li {
+            padding-bottom: 0.4em;
+            font-size: 1.1rem;
+        }
+    }
+    a {
+        transition: map-get(var.$transition, fast);
+        &:hover {
+            color: var.$color-blue;
+        }
+    }
+}
+.Footer-redes {
+    display: flex;
+    gap: 1rem;
+    font-size: calc(var.$size-icons + 0.7rem);
+    a {
+        transition: map-get(var.$transition, fast);
+        &:hover {
+            color: var.$color-blue;
+        }
+    }
+}
+
+@include breakP.media-screen-down(sm) {
+    .Footer-bottom {
+        gap: 0;
+        div {
+            width: 50%;
+        }
+    }
+}
